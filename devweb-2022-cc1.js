@@ -22,10 +22,8 @@ function game() {
     $output.innerHTML = $output.innerHTML + `<br>` + "Veuillez entrer un nombre entier valide.";
     return;
   }
-  console.log("L'utilisateur a saisi : " + userGuess);
   // On incrémente le nombre d'essais
   nbGuesses++
-  console.log(secretNumber);
   // Sinon, on vérifie si l'utilisateur a trouvé le nombre secret, si c'est le cas, on arrête le jeu en affichant le nombre secret et le nombre d'essais. 
   if (userGuess === secretNumber) {
 	  $output.innerHTML = `Bravo ! Vous avez gagné ! Le nombre secret était bien ${secretNumber}. Vous avez gagné en ${nbGuesses} essais.`;

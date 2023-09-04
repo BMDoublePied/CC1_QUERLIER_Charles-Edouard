@@ -45,6 +45,7 @@ function game() {
   } else {
 	  $output.innerHTML = $output.innerHTML + `<br>` + `Raté, ${userGuess} est trop bas. Il vous reste ${maxGuesses - nbGuesses} essais.`;
   }
+  $numUsr.value = ""
 };
 
 // Fonction initialisant les différents paramètres du jeu
